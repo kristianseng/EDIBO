@@ -1,7 +1,7 @@
 Ubuntu bash shell on windows
 
 
-![homework](https://github.com/kristianseng/EDIBO/blob/master/HW/HW2/ubuntuBashShellWindows.PNG)
+![homework](https://github.com/kristianseng/EDIBO/blob/master/notes&Hws/HW2/ubuntuBashShellWindows.PNG)
 
 
 
