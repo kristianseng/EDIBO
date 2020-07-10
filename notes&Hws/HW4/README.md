@@ -33,4 +33,4 @@ grep awk sed --> useful text processors
 gnuplot for text visualization
 
 
-![Alt text](https://github.com/kristianseng/EDIBO/blob/master/HW/HW4/outputSystemUsagePerSecond.PNG)
+![Alt text](https://github.com/kristianseng/EDIBO/blob/master/notes&Hws/HW4/outputSystemUsagePerSecond.PNG)
