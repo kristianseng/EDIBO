@@ -1,0 +1,50 @@
+Summary of bit operations and 
+
+linux bash shell on windows (installed).
+
+In computer programming, a bitwise operation ** operates on one or more bit patterns or binary numerals at the level of their individual bits **. 
+It is a ** fast and simple action, directly supported by the processor **, and is used to manipulate values for comparisons and calculations.
+
+On simple low-cost processors, typically, bitwise operations are substantially faster than division, several times faster than multiplication, 
+and sometimes significantly faster than addition.[clarification needed] While modern processors usually perform addition and multiplication just as fast as bitwise operations
+due to their longer instruction pipelines and other architectural design choices, bitwise operations do commonly use less power because of the reduced use of resource
+
+**Binary**
+
+0001 -> decimal 1
+0011 -> decimal 3
+
+
+
+
+    0101 (decimal 5)
+AND 0011 (decimal 3)          // says 1 if both lines are 1
+  = 0001 (decimal 1)
+  
+    0110 (decimal 6)
+AND 1011 (decimal 11) 
+  = 0010 (decimal 2)
+  
+   0101 (decimal 5)
+OR 0011 (decimal 3)            // is 1 if any of the lines or both lines are 1
+ = 0111 (decimal 7)
+ 
+    0101 (decimal 5)
+XOR 0011 (decimal 3)        // if just one line has 1   
+  = 0110 (decimal 6)
+  
+  
+  
+  Arithmetic shift
+   00010111 (decimal +23) LEFT-SHIFT
+=  00101110 (decimal +46)
+
+Logical shift
+In a logical shift, zeros are shifted in to replace the discarded bits. Therefore, the logical and arithmetic left-shifts are exactly the same.
+
+
+
+
+C-family,Java, and Pascal uses shifts - exampe, >>
+JavaScript uses bitwise operations to evaluate each of two or more units place to 1 or 0.[12]
+

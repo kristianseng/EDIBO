@@ -1,0 +1,53 @@
+PS1=$
+vim script01.sh
+chmod 740 script01.sh ---> change rights
+chmod +x script01.sh /// adds x rights to all groups
+touch  -- create file
+
+drwr-xr-x
+creator rights | creator groups right | all rights
+chmod 740 script01.sh ---> good setting for rights
+mc
+
+
+echo $USER
+echo $HOME
+whereis pico
+ls -l /user/bin/ | wc -l
+./scirpt01.sh
+time ./script01.sh
+touch  -- create file
+
+drwr-xr-x
+creator rights | creator groups right | all rights
+chmod 740 script01.sh ---> good setting for rights
+
+hexdump -C abs.txt
+
+///// git-upload file
+
+git config --global user.email kristians.engels@gmail.com
+git add .
+git commit -m "20200703_16_25"
+git push orgin master
+
+PATH=$PATH:~
+
+///// script in nano////
+
+#!/bin/bash
+
+mkdir DEF
+cd DEF
+touch text.txt
+cd ../
+cp DEF/test.txt ./test1.txt
+
+git clone https://github.com/kristapseng/EDIBO
+
+./git-upload
+//////////////////////////
+
+ls-l script01.sh
+ls -l /user/bin/ | wc -l
+

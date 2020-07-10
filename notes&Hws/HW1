@@ -1,0 +1,109 @@
+                                                Analysis of Windows Event Logs using pandas DataFrame
+                                                
+30min
+
+dokumentācija
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
+
+class pandas.DataFrame(data=None, index: 
+Optional[Collection] = None, columns: Optional[Collection] = None, dtype: Optional[Union[str, numpy.dtype, ExtensionDtype]] = None, copy: bool = False)[source]
+
+
+1.1. Data representation
+1.2. Less writing and more work done
+1.3.  An extensive set of features
+1.4. Efficiently handles large data
+1.5. Makes data flexible and customizable
+
+
+
+
+
+windows event log export:
+
+Export as CSV
+
+    Open Event Viewer (Run → eventvwr.msc).
+    Locate the log to be exported.
+    Select the logs that you want to export, right-click on them and select "Save All Events As".
+    Enter a file name that includes the log type and the server it was exported from.
+    Save as a CSV (Comma Separated Value) file. 
+
+
+Command to read csv file:
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
+
+csv file structure example: https://sysadminguides.files.wordpress.com/2017/04/csv-export.png
+
+Event Type: 
+Event Source:
+Event Category:
+Event 
+Date: 
+Time: 
+User: 
+Computer: 
+Description:
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Complete guide to analyse windows data logs using pandas:
+https://dzone.com/articles/using-python-pandas-for-log-analysis
+
+
+Complete code example:
+
+
+/*
+
+// initiliaze project
+import pandas as pd
+
+// read, import data
+urls_df = pd.read_csv('urls_report.csv')
+
+
+// filtering example
+urls_df['Volume Offload'] = (urls_df['COLUMN']*100) / (urls_df['COLUMN'] + urls_df['COLUMN'])
+low_offload_urls = urls_df[(urls_df['COLUMN'] > 0) & (urls_df['COLUMN']<50.0)]
+low_offload_urls = low_offload_urls[(~low_offload_urls.URL.str.contains("COLUMN")) & (~low_offload_urls.URL.str.contains("COLUMN")) ]
+
+// sorting example
+low_offload_urls.sort_values(by=['COLUMN','COLUMN'],inplace=True, ascending=['True','False'])
+
+// print result using foreach
+for each_url in low_offload_urls['URL']:
+print (each_url)
+
+*/
+
+
+
+
+System - Operating System segments - hardware changes, device drivers, system changes, and all activities related to the machine
+Security - The security log is the best and last option to detect and investigate attempted and/or successful unauthorized activity. Event logs can also be used to troubleshoot problems in the system.
+Application - Events that are installed in the system. This records the errors that occur in an application, informational events, and warnings from the software applications. 
+    
+    ////////////////////////////////
+    
+    
+    //What are we looking for in windows log data///
+    
+    Log centralization - centralize your Windows event logs from multiple servers and desktops. By properly administering your logs, you can track the health of your systems, keep your log files secure, and filter contents to find specific information.
+    Data aggregation and collection
+    Correlation - 
+    Compliance - Prepare for the Worst
+    Long-term storage
+    Forensic Analysis - It examines structured data with regard to incidents of financial crime.
+    
+    Making informed security decisions
+    Measuring compliance with standards such as PCI, SOX…
+    Detecting policy violations
+    Identifying and creating a response to security threads
+    
+    
+    https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt6c4cbb4f3ca4258c/5ca67d82154fe31d3366f9f6/logging-winlogbeat-windows.jpg
+    
+
