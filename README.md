@@ -14,3 +14,5 @@ http://tsugi.sakai.lv/portal/site/e4fe3414-6bcf-4bfb-856d-f2281f98ab79/page/50fe
 
 
 ![ScreenshotExample](Example.PNG)
+
+http://htmlpreview.github.io/
