@@ -1,1 +1,2 @@
-Static Website inclues websites file and git script file (a.sh)
+:shipit:
+Static Website folder contains websites files and git-upload script file (a.sh)
