@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // insert HTML sections (header and footer);
 
 function includeHTML() {
@@ -36,3 +30,47 @@ function includeHTML() {
 
   includeHTML();
 
+
+
+  // https://openexchangerates.org/api/historical/2012-07-10.json?app_id=YOUR_APP_ID
+
+// data processes and visulaziation
+
+
+const currencyEl = document.getElementById('currency');
+
+
+
+// Fetch exchange rates and update the DOM
+/*
+function calculate () {
+    const currency_fetch = currencyEl.value;
+    
+/*
+    fetch(`https://api.exchangerate-api.com/v4/latest/${currency_fetch}`)
+    .then(res => res.json())
+    .then(data => {
+        const rate = data.rates[currency];
+        rateEl.innerHTML = `1 ${currency} = ${rate} ${currency}`
+
+        amountEl_two.value = (amountEl_one.value * rate).toFixed(2);
+    });
+}
+*/
+
+//Event listeners
+
+currencyEl.addEventListener('change', calculate)
+
+var date = "2001-02-16";
+
+function calculate() { get('https://openexchangerates.org/api/historical/' + date + '.json', {app_id: 'de0412ae38554dff9ba1ab4b3e8d50d1'}, 
+    function(data) {
+    console.log(data);
+});
+};
+
+// de0412ae38554dff9ba1ab4b3e8d50d1
+
+
+calculate();
