@@ -1,0 +1,17 @@
+exit
+databases;
+show\001databases;
+use\001edibo;
+show\001tables;
+select\001*\001from\001temp;
+create\001table\001mana_tabula1(lauks1\001smallint,\001lauks2\001varchar(3));
+show\001tables;
+insert\001into\001mana_tabula1\001values\001(2,'def');
+select\001*\001from\001mana_tabula1;
+insert\001into\040mana_tabula1\001values\001(10000000000,'def');
+exit;
+who
+ssh
+ssh\001
+show\001databases;
+show\001databases\001show\001databases;
